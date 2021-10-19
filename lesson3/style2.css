@@ -1,0 +1,54 @@
+img{
+    width: 100px;
+    height: 100px;   
+}
+body{
+    background: linear-gradient(90deg, rgba(232,22,148,1) 22%, rgba(9,85,121,1) 51%, rgba(17,195,210,1) 91%, rgba(0,212,255,1) 100%);
+}
+table{
+    width: 100%;
+    height: 80vh;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(251, 255, 20);
+    font-size: 40px;
+    border: 1px solid black;
+}
+h1{
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+h1:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(160,29,253,1) 29%, rgba(252,117,53,1) 80%, rgba(252,176,69,1) 100%);
+    color: coral;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 915;
+    font-size: 75px;
+    
+}
+td:hover{
+    cursor: pointer;
+    color: black;
+    font-size: 45px;
+    border: 3px solid darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(245,99,32,1) 26%, rgba(160,29,253,1) 29%, rgba(115,172,187,1) 46%, rgba(224,232,96,1) 69%, rgba(252,117,53,1) 80%, rgba(59,137,252,1) 88%, rgba(252,176,69,1) 100%);
+    font-weight: 800;
+    
+}
+th:hover{
+    cursor: pointer;
+    color: darkcyan;
+    font-size: 45px;
+    border: 3px solid cyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(26,3,147,1) 49%, rgba(8,59,119,1) 100%);
+    font-weight: 800;
+
+}
