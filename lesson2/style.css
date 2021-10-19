@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(167, 142, 0);
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+h1{
+    color: darkred;
+}
+p{
+    color: indigo;
+    font-size: 25px;
+}
+ul li{
+    color:red;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
