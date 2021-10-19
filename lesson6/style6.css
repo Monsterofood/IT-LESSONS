@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+}
+body{
+    background-color: rgb(25, 179, 226);
+}
+.header, .main{
+    width: 420px;
+    margin: 30px 0 0 400px;
+}
+.footer{
+    width: 510px;
+    height: 180px;
+    margin: 105px 0 0 -420px;
+    background-color:rgb(32, 255, 188);
+    float: left;
+}
+.header-block-red{
+    width: 100%;
+    height: 80px;
+    background-color:red;
+}
+.header-block-green{
+    width: 100%;
+    height: 80px;
+    background-color:green;
+}
+.header-block-blue{
+    width: 100%;
+    height: 80px;
+    background-color:blue;
+}
+.main-block-top{
+    width: 100%;
+}
+.main-block-top-red{
+    width: 140px;
+    height: 80px;
+    background-color:red;
+    float: left;
+}
+.main-block-top-green{
+    width: 140px;
+    height: 80px;
+    background-color:green;
+    float: left;
+}
+.main-block-top-blue{
+    width: 140px;
+    height: 80px;
+    background-color:blue;
+    float: left;
+}
+.main-block-middle{
+    width: 420px;
+}
+.main-block-middle-yellow{
+    width: 420px;
+    height: 80px;
+    background-color:yellow;
+    float: left;
+}
+.main-block-bottom-gray{
+    width: 210px;
+    height: 80px;
+    background-color:gray;
+    float: left;
+}
+.main-block-bottom-black{
+    width: 210px;
+    height: 80px;
+    background-color:black;
+    float: left;
+}
+.footer-block {
+    width: 130px;
+    height: 140px;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+}
+.red{
+    background-color: rgb(223, 20, 20);
+}
+
+.green{
+    background-color: rgb(0, 146, 0);
+}
+
+.blue{
+    background-color: rgb(25, 25, 223);
+}
