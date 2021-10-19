@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+        background:rgb(230, 141, 68);
+    }
+    h1{
+        color: chocolate;
+        font-size: 60px;
+        text-align: center;
+    }
+    h1:hover{
+
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+    }
+h2:hover{
+            cursor: pointer;
+}
+li:hover{
+        font-weight: 800px;
+        cursor: pointer;
+        -webkit-box-shadow: -1px 2px 16px 9px #000000; 
+        box-shadow: -1px 2px 16px 9px #000000;
+        border-bottom: 1px solid black;
+    }        
+.myworks{
+    border-radius: 5px;
+    margin: 0px 15px;
+    padding: 0px 25px;
+    border: 1px solid black;
+    font-size: 35px;
+}
+ol{
+    list-style-type: none;
+}
+
