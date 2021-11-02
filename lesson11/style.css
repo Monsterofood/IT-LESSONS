@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+ background-color: rgb(160, 160, 57);
+}
+.block1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    position: static;
+    margin: 10px 0px;
+    top: 5px;
+    left: 25px;
+}
+.block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 10px 0px;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+.block3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(13, 180, 49);
+    border: 2px solid rgb(76, 255, 40);
+    margin: 10px 0px;
+    position: sticky;
+    left: 83%;
+    top: 50%;
+}
+.block4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 10px 0px;
+    position: absolute;
+    right: 78px;
+    top: 36px;
+}
+.block5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 10px 0px;
+    position: fixed;
+    left: 250px;
+    bottom: 100px;
+}
+.block3 > p{
+    color: white;
+}
+.japan-flag{
+    width: 600;
+    height: 400px;
+}
