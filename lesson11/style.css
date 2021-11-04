@@ -6,6 +6,10 @@
 body {
  background-color: rgb(160, 160, 57);
 }
+h2{
+    text-align: center;
+}
+/* position-examples css */
 .block1 {
     display: flex;
     justify-content: center;
@@ -36,14 +40,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
     width: 200px;
     height: 100px;
+    left: 600px;
+    top: 10px;
+    background-color: black;
+    color: white;
     background-color: rgb(13, 180, 49);
     border: 2px solid rgb(76, 255, 40);
     margin: 10px 0px;
-    position: sticky;
-    left: 83%;
-    top: 50%;
+
 }
 .block4 {
     display: flex;
@@ -74,7 +81,79 @@ body {
 .block3 > p{
     color: white;
 }
+
+/* Japan flag */
 .japan-flag{
-    width: 600;
+    width: 600px;
     height: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: darkred;
 }
+/* Instagram-logo css */
+.logo{
+    width: 400px;
+    height: 400px;
+    background:  #ac3693;
+    margin:  auto;
+    position: absolute;
+    top:  200px;
+    right:  0;
+    border-radius:  100px;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+}
+.content {
+    width: 300px;
+    height:  300px;
+    background:  transparent;
+    border:  28px solid white;
+    border-radius:  100px;
+    position: absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    margin: auto;
+}
+.inst-circle{
+    width: 150px;
+    height:  150px;
+    background:  transparent;
+    border:  28px solid white;
+    border-radius:  100%;
+    position: absolute;
+    top:  0;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    margin:  auto;
+}
+.logo .content .inst-circle:after { 
+    width: 40px; 
+    height:  40px; 
+    background:  white; 
+    border-radius:  100%; 
+    position: absolute; 
+    bottom:  0; 
+    left:  0; 
+    margin:  auto; 
+    right:  0; 
+    content: ''; 
+    left: 106px; 
+    top: -161px; 
+}
+/* Pencil css */
+
