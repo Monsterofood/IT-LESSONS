@@ -156,23 +156,19 @@ h2{
     top: -161px; 
 }
 /* Pencil css */
-.main{
+.main {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(0px, 50%);
+
     height: 65%;
     width: 75px;
     background: #ab8260;
+    
     border-radius:8px;
+    
+    
+    
     box-shadow: 1px -35px 60px -20px #fff;
-}
-.main1{
-
-}
-.main2{
-
-}
-.main3{
 
 }
