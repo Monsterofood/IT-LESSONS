@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(8,89,119);
+background: linear-gradient(90deg, rgba(8,89,119,1) 21%, rgba(84,110,92,1) 60%, rgba(110,84,109,1) 91%) ;
+ 
+}
+.circle{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(65, 56, 56);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: cyan;
+}
+.circle:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
