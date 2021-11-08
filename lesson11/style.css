@@ -159,20 +159,174 @@ h2{
 .main{
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(0px, 50%);
-    height: 65%;
-    width: 75px;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 80px;
+    height:60%;
     background: #ab8260;
     border-radius:8px;
-    box-shadow: 1px -35px 60px -20px #fff;
-}
-.main1{
-
-}
-.main2{
-
-}
-.main3{
-
-}
+  }
+  
+  .main1{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 20px;
+    height:100%;
+    background:#954901;
+    animation: m1Anim 5s linear  infinite;
+    border-radius: 120px 150px 0 0;
+    box-shadow: inset -5px 5px 5px 0px #8d4a00;
+  }
+  .main2{
+    position: absolute;
+    top:0;
+    left:20px;
+    width: 40px;
+    height:100%;
+    background: #d68a00;
+    animation: m2Anim 5s linear infinite;
+    border-radius: 150px 150px 0 0;
+    box-shadow: inset -5px 2px 5px 0px #eca841,
+                inset 3px 0px 5px 0px #8d4a00;
+  }
+  .main3{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 20px;
+    height:100%;
+    background: #ed9e00;
+    animation: m3Anim 5s linear infinite;
+    box-shadow: inset 5px 5px 5px 0px #f1b05f;
+    border-radius: 150px 120px 0 0;
+  }
+  .top{
+    position: absolute;
+    top:-143px;
+    
+    right:0;
+    width: 100%;
+    height:160px;
+    
+    background-image: linear-gradient(85deg,#ab8260,#815e3e,#caa68c,#a77c60);
+    clip-path: polygon(50% 0%, 100% 91%, 100% 100%, 0 100%, 0 91%);
+    box-shadow:  inset 20px 15px 20px 10px #8d5e31;
+                  
+  }
+  .top2{
+     position: absolute;
+    top:0;
+    
+    right:0;
+    width: 100%;
+    height:50px;
+    
+    background-image: linear-gradient(82deg,#26221e,#26221e,#26221e,#26221e,#26221f,#9d9397,#26221f,#26221e,#26221e,#26221e);
+   
+  }
+  @keyframes m1Anim {
+    0%{
+       background:#a41259;
+       box-shadow: inset -2px 2px 5px 0px #ef95bd;
+    }
+    20%{
+       background:#a41259;
+       box-shadow: inset -2px 2px 5px 0px #ef95bd;
+    }
+   35%{
+      background:#0c3e6e;
+       box-shadow: inset -1px 2px 5px 0px  #4b95c9;
+    }
+    49%{
+      background:#0c3e6e;
+       box-shadow: inset -1px 2px 5px 0px  #4b95c9;
+    }
+    66%{
+      background: #007868;
+       box-shadow: inset -1px 2px 5px 0px   #089e92;
+    }
+     85%{
+      background:#007868;
+       box-shadow: inset -1px 2px 5px 0px    #089e92;
+    }
+    100%{
+       background:#a41259;
+       box-shadow: inset -2px 2px 5px 0px #ef95bd;
+    }
+  }
+  @keyframes m2Anim {
+    0%{
+       background: #ea4e95;
+    
+    box-shadow: inset -5px 2px 5px 0px #f38cb6,
+                inset 3px 0px 5px 0px #ef95bd;
+    }
+    16.5%{
+       background: #ea4e95;
+    
+    box-shadow: inset -5px 2px 5px 0px #f38cb6,
+                inset 3px 0px 5px 0px #ef95bd;
+    }
+    33%{
+      background:#02659a; 
+       box-shadow: inset -4px 2px 5px 0px  #4b95c9,
+                inset 1px 0px 5px 0px #4b95c9;
+    }
+    49.5%{
+      background:#02659a; 
+       box-shadow: inset -4px 2px 5px 0px  #4b95c9,
+                inset 1px 0px 5px 0px #4b95c9;
+    }
+    66%{
+     
+        
+        background:#04a294;  
+      box-shadow: inset -4px 2px 5px 0px   #2acfc1,
+                inset 1px 0px 5px 0px #2acfc1;
+    }
+    82.5%{   
+        background:#04a294;
+      box-shadow: inset -4px 2px 5px 0px   #2acfc1,
+                inset 1px 0px 5px 0px #2acfc1;
+    }
+    100%{
+       background: #ea4e95;
+  
+     box-shadow: inset -5px 2px 5px 0px #f38cb6,
+                inset 3px 0px 5px 0px #ef95bd;
+    }
+  }
+  @keyframes m3Anim {
+    0%{
+       background: #f08ab6;
+    
+    box-shadow: inset 5px 5px 5px 0px #f49ac3;
+    }
+    16.5%{
+       background: #f08ab6;
+    
+    box-shadow: inset 5px 5px 5px 0px #f49ac3;
+    }
+    33%{
+      background:#1383bb;
+        box-shadow: inset 2px 2px 5px 0px #6fb5e1;
+    }
+    49.5%{
+      background:#1383bb;
+        box-shadow: inset 2px 2px 5px 0px #6fb5e1;
+    }
+    66%{
+      background:#018e7e ;
+        box-shadow: inset 2px 2px 5px 0px #30d7c6;
+    }
+    82.5%{
+      background:#018e7e ;
+        box-shadow: inset 2px 2px 5px 0px #30d7c6;
+    }
+    100%{
+       background: #f08ab6;
+    
+    box-shadow: inset 5px 5px 5px 0px #f49ac3;
+    }
+  }
