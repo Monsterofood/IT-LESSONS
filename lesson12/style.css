@@ -6,25 +6,154 @@
 body{
     background: rgb(8,89,119);
 background: linear-gradient(90deg, rgba(8,89,119,1) 21%, rgba(84,110,92,1) 60%, rgba(110,84,109,1) 91%) ;
- 
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif;
 }
-.circle{
+li{
+    list-style-type: none;
+    color: black;
+}
+.circle {
     display: flex;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: rgb(65, 56, 56);
     justify-content: center;
     align-items: center;
-    border: 1px solid black
-}
+  }
+  .circle a {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+  }
 a{
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
     color: cyan;
 }
-.circle:hover{
+.circle a:hover{
     background-color: crimson;
     cursor: pointer;
+}
+.main {
+    margin: 50px auto;
+    width: 50%;
+    background: rgb(233, 233, 233);
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    height: 850px;
+  }
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right,
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px auto;
+      }
+      input[type="submit"] {
+        margin: 5px;
+        padding: 10px 20px;
+        width: 50%;
+        border: 2px solid black;
+        text-align: center;
+        position: relative;
+        left: 25%;
+        color: white;
+        font-weight: 400;
+      }
+      input[type="text"] {
+        margin: 5px;
+        padding: 5px;
+        background: none;
+        border: none;
+        width: 100%;
+        border-bottom: 2px solid black;
+      }
+      input[type="email"] {
+        margin: 5px;
+        padding: 5px;
+        background: none;
+        border: none;
+        width: 100%;
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+      }
+      input[type="tel"] {
+        margin: 5px;
+        padding: 5px;
+        background: none;
+        border: none;
+        width: 100%;
+        border-bottom: 2px solid black;
+      }
+      .help {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        color: rebeccapurple;
+        margin: 10px;
+      }
+      .btn {
+        margin: 30px;
+      }
+      .btn a {
+        padding: 20px 50px;
+        border-radius: 50px;
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .arrow {
+        margin-top: 30px;
+        padding: 20px 60px;
+        background: rgb(195, 195, 195);
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 25px;
+      }
+      #message {
+        background: transparent;
+        border: 1px solid black;
+      }
+
+      .main .left h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .main .left p {
+        font-weight: 700;
+        color: rgb(71, 53, 87);
+        margin: 5px;
+      }
+
+      input[type="submit"]:hover,
+      .btn a:hover,
+      .arrow:hover,
+      .social > a:hover {
+        cursor: pointer;
+        color: black;
+      }
+.fa-long-arrow-alt-left{
+    font-size: 20px;
 }

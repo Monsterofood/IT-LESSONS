@@ -4,36 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/lesson12/style.css">
     <title>form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_1zIJsl5qWKYXak5SKp4Kn');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_vh2emtm', 'template_wr6k2od', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/043c99f71a.js" crossorigin="anonymous"></script>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: rgb(8,89,119);
+    background: linear-gradient(90deg, rgba(8,89,119,1) 21%, rgba(84,110,92,1) 60%, rgba(110,84,109,1) 91%) ;
+        line-height: 25px;
+        font-family: "Montserrat", sans-serif;
+    }
+    li{
+        list-style-type: none;
+        color: black;
+    }
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle a {
+        width: 50px;
+        height: 50px;
+    
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+      }
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        color: cyan;
+    }
+    .circle a:hover{
+        background-color: crimson;
+        cursor: pointer;
+    }
+    .main {
+        margin: 50px auto;
+        width: 50%;
+        background: rgb(233, 233, 233);
+        border: 1px solid black;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        height: 850px;
+      }
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right,
+          .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0px auto;
+          }
+          input[type="submit"] {
+            margin: 5px;
+            padding: 10px 20px;
+            width: 50%;
+            border: 2px solid black;
+            text-align: center;
+            position: relative;
+            left: 25%;
+            color: white;
+            font-weight: 400;
+          }
+          input[type="text"] {
+            margin: 5px;
+            padding: 5px;
+            background: none;
+            border: none;
+            width: 100%;
+            border-bottom: 2px solid black;
+          }
+          input[type="email"] {
+            margin: 5px;
+            padding: 5px;
+            background: none;
+            border: none;
+            width: 100%;
+            border-bottom: 2px solid black;
+            margin-bottom: 20px;
+          }
+          input[type="tel"] {
+            margin: 5px;
+            padding: 5px;
+            background: none;
+            border: none;
+            width: 100%;
+            border-bottom: 2px solid black;
+          }
+          .help {
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            color: rebeccapurple;
+            margin: 10px;
+          }
+          .btn {
+            margin: 30px;
+          }
+          .btn a {
+            padding: 20px 50px;
+            border-radius: 50px;
+            border: 1px solid black;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+          }
+          a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+          }
+          .arrow {
+            margin-top: 30px;
+            padding: 20px 60px;
+            background: rgb(195, 195, 195);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 25px;
+          }
+          #message {
+            background: transparent;
+            border: 1px solid black;
+          }
+    
+          .main .left h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          .main .left p {
+            font-weight: 700;
+            color: rgb(71, 53, 87);
+            margin: 5px;
+          }
+    
+          input[type="submit"]:hover,
+          .btn a:hover,
+          .arrow:hover,
+          .social > a:hover {
+            cursor: pointer;
+            color: black;
+          }
+    .fa-long-arrow-alt-left{
+        font-size: 20px;
+    }</style>
 </head>
 <body>
-<div class="container">
-    <h1>Contact us</h1>
-    <div class="circle"><a href="#">f</a></div>
-    <div class="circle"><a href="#">i</a></div>
-    <div class="circle"><a href="#">t</a></div>
-    <form action="">
-        <div class="b1">
-            <label for="">Name:</label>
-            <input type="text" name="from_name" placeholder="Daniil Honcharenko">
+    <div class="main">
+      <div class="left">
+        <h2>Contact us</h2>
+        <div class="circle">
+          <div class="circle"><a href="https://www.facebook.com/profile.php?id=100035734837206"><li><i class="fab fa-facebook-f"></i></li></a></div>
+          <div class="circle"><a href="https://steamcommunity.com/profiles/76561198935901734/"><li><i class="fab fa-steam-symbol"></i></li></a></div>
+          <div class="circle"><a href="https://t.me/daniilhoncharenko"><li><i class="fab fa-telegram-plane"></i></li></a></div>
         </div>
-        <div class="b2">
-            <label for="">Phone:</label>
-            <input type="tel" name="phone" placeholder="093-132-90-90">
+        <p>or use our contact form below</p>
+        <form class="input" action="" id="contact-form">
+          <div>
+            <input type="hidden" name="contact_number" />
+            <label>Name: </label>
+            <input type="text" value="" name="from_name" placeholder="Surname name" />
+          </div>
+          <div>
+            <label>Phone: </label>
+            <input type="tel" value="" name="phone" placeholder="093-132-65-42" />
+          </div>
+          <div>
+            <label>Email: </label>
+            <input type="email" value="" name="reply_to" placeholder="example@gmail.com" />
+          </div>
+          <p>Type your message here:</p>
+          <textarea name="message" id="message" cols="30" rows="15"></textarea>
+          <div>
+            <input type="submit" value="SEND" />
+          </div>
+        </form>
+        <a class="help" href="#">Need additional help?</a>
+        <div class="btn">
+          <a href="#">Contact us</a>
         </div>
-        <div class="b3">
-            <label for="">Email:</label>
-            <input type="email" name="email" placeholder="example@gmail.com">
-        </div>
-        <p>Type your message here:</p>
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
-        <div class="b4">
-            <input type="submit" value="Send">
-        </div>
-    </form>
-    <a href="#" class="help">Need additional help?</a>
-    <a href="#" class="contact-us">Contact us</a>
-</div>
-</body>
+      </div>
+      <div class="right">
+        <h2>Hello, User!</h2>
+        <p>If you want to know more info about our project than</p>
+        <a class="arrow" href="#">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
 </html>
