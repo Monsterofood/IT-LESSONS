@@ -165,6 +165,7 @@ h2{
     height:60%;
     background: #ab8260;
     border-radius:8px;
+    box-shadow: 1px -35px 60px -20px #fff;
   }
   
   .main1{
