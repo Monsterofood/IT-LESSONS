@@ -60,6 +60,7 @@
         align-items: center;
         color: white;
         margin: 10px;
+        background-color: white;
       }
     a{
         text-decoration: none;
@@ -70,6 +71,8 @@
     .circle a:hover{
         background-color: crimson;
         cursor: pointer;
+        text-transform: uppercase;
+    transition: background-color 0.5s;
     }
     .main {
         margin: 50px auto;
@@ -80,11 +83,16 @@
         display: flex;
         justify-content: center;
         height: 850px;
+        -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, 5px 8px 26px 26px rgba(255,133,219,0.33); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, 5px 8px 26px 26px rgba(255,133,219,0.33);
+background: rgb(217,91,0);
+background: linear-gradient(90deg, rgba(217,91,0,1) 0%, rgba(0,219,255,1) 25%, rgba(117,197,84,1) 49%, rgba(14,233,209,1) 56%, rgba(87,164,207,1) 84%, rgba(233,14,225,1) 92%);
       }
       .circle {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: yellow;
       }
       .right,
           .left {
@@ -93,6 +101,7 @@
             align-items: center;
             flex-direction: column;
             margin: 0px auto;
+
           }
           input[type="submit"] {
             margin: 5px;
@@ -104,6 +113,8 @@
             left: 25%;
             color: white;
             font-weight: 400;
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
           }
           input[type="text"] {
             margin: 5px;
@@ -112,6 +123,7 @@
             border: none;
             width: 100%;
             border-bottom: 2px solid black;
+            background: white   ;
           }
           input[type="email"] {
             margin: 5px;
@@ -121,6 +133,7 @@
             width: 100%;
             border-bottom: 2px solid black;
             margin-bottom: 20px;
+            background: white;
           }
           input[type="tel"] {
             margin: 5px;
@@ -129,6 +142,7 @@
             border: none;
             width: 100%;
             border-bottom: 2px solid black;
+            background: rgb(255, 255, 255); 
           }
           .help {
             text-align: center;
@@ -136,6 +150,7 @@
             font-weight: 500;
             color: rebeccapurple;
             margin: 10px;
+            font-size: 27px;
           }
           .btn {
             margin: 30px;
@@ -147,6 +162,8 @@
             text-align: center;
             text-decoration: none;
             color: white;
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
           }
           a {
             text-align: center;
@@ -162,6 +179,14 @@
             border: 2px solid black;
             text-align: center;
             border-radius: 25px;
+            background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(129,86,200,1) 35%, rgba(173,80,167,1) 58%, rgba(220,74,131,1) 83%, rgba(252,70,107,1) 100%);
+          }
+          .arrow:hover{
+              background: red;
+              text-transform: uppercase;
+              transition: background-color 0.5s;
+
           }
           #message {
             background: transparent;
@@ -194,9 +219,9 @@
       <div class="left">
         <h2>Contact us</h2>
         <div class="circle">
-          <div class="circle"><a href="https://www.facebook.com/profile.php?id=100035734837206"><li><i class="fab fa-facebook-f"></i></li></a></div>
-          <div class="circle"><a href="https://steamcommunity.com/profiles/76561198935901734/"><li><i class="fab fa-steam-symbol"></i></li></a></div>
-          <div class="circle"><a href="https://t.me/daniilhoncharenko"><li><i class="fab fa-telegram-plane"></i></li></a></div>
+          <div class><a href="https://www.facebook.com/profile.php?id=100035734837206"><li><i class="fab fa-facebook-f"></i></li></a></div>
+          <div class><a href="https://steamcommunity.com/profiles/76561198935901734/"><li><i class="fab fa-steam-symbol"></i></li></a></div>
+          <div class><a href="https://t.me/daniilhoncharenko"><li><i class="fab fa-telegram-plane"></i></li></a></div>
         </div>
         <p>or use our contact form below</p>
         <form class="input" action="" id="contact-form">
