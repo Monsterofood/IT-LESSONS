@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13. Pseudo-classes&elements</title>
+    <link rel="stylesheet" href="/lesson13/style.css">
+    <script src="https://kit.fontawesome.com/505e581b00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- pseudo-elements -->
+    <div class="container">
+      <h1>Pseudo-element Examples</h1>
+      <h2>Example 1 (::after)</h2>
+      <p><a href="http://www.google.com" class="arrow">This is a link with an arrow! <i class="fa-solid fa-arrow-right-long"></i></a></p>
+  
+      <h2>Example 2 (::before, ::after)</h2>
+    <p><a href="http://www.google.com" class="hexagon"><i class="fa-thin fa-hexagon"></i>This is a link with an arrow and a hexagon!</i></a></p>
+  
+      <h2>Example 3 (::after)</h2>
+    <p><a href="http://www.google.com" class="print">This is a print styles link!</a></p>
+  </div>
+
+<!-- pseudo-classes -->
+<div>
+    <h2>Link Pseudo-Classes</h2>
+    
+    <a href="http://www.google.com"  class="visited">:visited pseudo-class</a>
+    
+    <a href="http://www.google.com"  class="link">:link pseudo-class</a>
+  </div>
+  
+  <div>
+    <h2>User Action Pseudo-Classes</h2>
+    
+    <p class="hover">HOVER pseudo-class</p>
+    
+    <a href="http://www.google.com"  class="active">:active pseudo-class</a>
+    
+    <a href="http://www.google.com"  class="focus">:focus pseudo-class</a>
+  </div>
+  
+  <div>
+    <h2>User Interface State Pseudo-Classes</h2>
+    <form action="">
+    First Name: <input type="text" name="fname" placeholder="Malcolm" />
+    
+    Last Name: <input type="text" name="lname" placeholder="Reynolds"/>
+    
+    I own a Firefly-class transport ship <input type="checkbox" name="vehicle" value="Firefly-class"/>
+</form>
+  </div>
+  
+  <div>
+    <h2>Structural and Position Pseudo-Classes</h2>
+    <p>:first-child :last-child and :only-child</p>
+    <ul>
+      <li>This list item is selected by :first-child</li>
+      
+      <li>This list item is not selected</li>
+      
+      <li>
+        <a href="#">This listed link is selected by :only-child</a>
+      </li>
+      
+      <li>This list item is selected by :last-child</li>
+    </ul>
+  </div>
+  
+  <article>
+    <h3>:first-of-type :last-of-type and :only-of-type</h3>
+    
+    <p>This paragraph is selected by :first-of-type</p>
+    
+    <p>This paragraph will not be selected</p>
+    
+    <span>This span is selected by :only-of-type</span>
+    
+    <p>This paragraph is selected by :last-of-type</p>
+  </article>
+  
+  <article>
+    <h3>:nth-child(n) and :nth-last-child(n)</h3>
+    
+    <h4>First line of text</h4>
+    <h4>Second line of text</h4>
+    <h4>Third line of text</h4>
+    <h4>Fourth line of text</h4>
+    <h4>Fifth line of text</h4>
+    <h4>Sixth line of text</h4>
+  </article>
+  
+  <article>
+    <h3>:nth-of-type(n) and :nth-last-of-type(n)</h3>
+    
+    <h5>First line of text</h5>
+    <h5>Second line of text</h5>
+    <h5>Third line of text</h5>
+    <h5>Fourth line of text</h5>
+    <h5>Fifth line of text</h5>
+    <h5>Sixth line of text</h5>
+  </article>
+  
+  <div>
+    <h2>Negation Pseudo-Class</h2>
+    
+    <h6 class="bold">This is some bold text</h6>
+    <h6 class="bold">This is some more bold text</h6>
+    <h6>This is selected with :not(.bold) and is not bold</h6>
+  </div>
+</body>
+</html>

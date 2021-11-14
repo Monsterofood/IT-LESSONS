@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+body {
+  background-color: #ededed;
+  font-family: "Roboto", sans-serif;
+}
+
+/* pseudo-elements */
+
+.container {
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+  height: auto;
+  padding: 1rem 2rem;
+  max-width: 650px;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a.arrow {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+a.arrow::after {
+  content: "›";
+  position: absolute;
+  margin: 0 7px;
+  bottom: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+a.arrow:hover::after, a.arrow:focus::after, a.arrow:active::after {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+
+a.hexagon {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding-right: 3.5rem;
+  position: relative;
+  text-decoration: none;
+}
+a.hexagon::after {
+  content: "";
+  width: 21px;
+  height: 18px;
+  top: 0;
+  bottom: 0;
+  right: 1.3rem;
+  line-height: 19px;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+}
+.fa-hexagon:before {
+  background-color: brown;
+  content: "";
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.4rem;
+  line-height: 19px;
+}
+a.hexagon:hover::before, a.hexagon:focus::before, a.hexagon:active::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+a.print[href]::after {
+  color: #000 !important;
+  content: "(" attr(href) ")" !important;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+/* pseudo-classes */
+
+div {
+    margin-left: 5%;
+}
+a {
+    color: #2db34a;
+    display: block;
+    margin-top: 2%;
+  }
+#link:link {
+    color: blue;
+  }
+#visited:visited {
+    color: red;
+  }
+p {
+    color: #2db34a;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+.hover:hover {
+    font-weight: bold;
+  }
+.active:active {
+    color: blue;
+  }
+.focus:focus {
+    color: #fff;
+  }
+input {
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+input:enabled {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+input:disabled {
+    font-size: 0.5em;
+  }
+input:checked {
+    height: 20px;
+    width: 20px;
+  }
+li:first-child {
+    font-weight: bold;
+  }
+li:last-child {
+    color: blue;
+  }
+a:only-child {
+    text-transform: uppercase;
+  }
+article {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+article p:first-of-type {
+    font-weight: bold;
+  }
+article p:last-of-type {
+    color: blue;
+  }
+article span:only-of-type {
+    text-transform: uppercase;
+  }
+article h4:nth-child(2n) {
+    font-weight: bold;
+  }
+article h4:nth-last-child(3n) {
+    color: blue;
+  }
+article h5:nth-of-type(2n) {
+    color: red;
+  }
+article h5:nth-last-of-type(2n) {
+    font-weight: bold;
+  }
+body h6:not(.bold) {
+    font-weight: normal;
+  }
