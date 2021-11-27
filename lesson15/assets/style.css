@@ -110,8 +110,6 @@
   
       flex-direction: column;
     }
-    .card {
-    }
   }
   @media (max-width: 80rem) {
     .cards-list {
